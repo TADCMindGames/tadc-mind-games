@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="2u0SJ3_ql6MbNyGTkNsws5WlRT2Lk2M5nXCBqtYtyCo" />
 
-  <title>TADC Mind Games</title>
   <title>TADC Mind Games - Play Free Digital Circus Horror Visual Novel Online</title>
 
   <meta name="description" content="Play TADC Mind Games online for free. A psychological horror visual novel set in a surreal Digital Circus world with branching choices, unstable characters, and multiple endings. No download required.">
@@ -17,10 +16,56 @@
   <link rel="canonical" href="https://tadc-mind-games.com/">
 
   <style>
-    body { font-family: Arial, sans-serif; background:#0b0b10; color:#fff; margin:0; }
-    .container { max-width:900px; margin:0 auto; padding:40px 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      background:#0b0b10;
+      color:#fff;
+      margin:0;
+    }
 
-    h1 { font-size:42px; margin-bottom:10px; }
+    /* ===== HERO 背景图（关键）===== */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      background-image: url("82VKoD.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: relative;
+    }
+
+    /* 黑色遮罩，保证文字可读 */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      margin: 10px 0 20px;
+    }
 
     .tags span {
       display:inline-block;
@@ -31,10 +76,10 @@
       border-radius:6px;
     }
 
-    .subtitle { font-size:18px; opacity:0.85; margin:20px 0; }
-
-    .cta {
-      margin:30px 0;
+    .subtitle {
+      font-size:18px;
+      opacity:0.9;
+      margin:20px 0;
     }
 
     .cta a {
@@ -52,42 +97,70 @@
       background:#ff1f1f;
     }
 
-    section { margin-top:40px; }
+    .container {
+      max-width:900px;
+      margin:0 auto;
+      padding:40px 20px;
+    }
 
-    h2 { margin-bottom:10px; }
+    section {
+      margin-top:40px;
+    }
 
-    .box { background:#15151d; padding:20px; border-radius:12px; }
+    h2 {
+      margin-bottom:10px;
+    }
 
-    footer { margin-top:60px; font-size:12px; opacity:0.6; }
+    .box {
+      background:#15151d;
+      padding:20px;
+      border-radius:12px;
+    }
+
+    footer {
+      margin-top:60px;
+      font-size:12px;
+      opacity:0.6;
+      text-align:center;
+      padding:30px;
+    }
+
   </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+<div class="hero">
+
+  <div class="hero-content">
+
+    <h1>TADC Mind Games</h1>
+
+    <div class="tags">
+      <span>Horror</span>
+      <span>Visual Novel</span>
+      <span>Indie</span>
+      <span>Multiple Endings</span>
+      <span>2D</span>
+      <span>Story Rich</span>
+    </div>
+
+    <p class="subtitle">
+      A psychological horror visual novel set in a surreal Digital Circus world where your choices shape unstable characters and multiple endings.
+    </p>
+
+    <div class="cta">
+      <a href="https://tadc-mind-games.com/play">
+        ▶ Play TADC Mind Games Online
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
 <div class="container">
-
-  <!-- HERO -->
-  <h1>TADC Mind Games</h1>
-
-  <div class="tags">
-    <span>Horror</span>
-    <span>Visual Novel</span>
-    <span>Indie</span>
-    <span>Multiple Endings</span>
-    <span>2D</span>
-    <span>Story Rich</span>
-  </div>
-
-  <p class="subtitle">
-    A psychological horror visual novel set in a surreal Digital Circus world where your choices shape unstable characters and multiple endings.
-  </p>
-
-  <!-- BIG CTA -->
-  <div class="cta">
-    <a href="https://tadc-mind-games.com/play">
-      ▶ Play TADC Mind Games Online
-    </a>
-  </div>
 
   <!-- ABOUT -->
   <section>
@@ -120,8 +193,8 @@
     </div>
   </section>
 
-  <!-- SECOND CTA -->
-  <section>
+  <!-- CTA -->
+  <section style="text-align:center;">
     <div class="cta">
       <a href="https://tadc-mind-games.com/play">
         ▶ Start Playing Now
@@ -129,12 +202,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 TADC Mind Games • All rights reserved
-  </footer>
-
 </div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 TADC Mind Games • All rights reserved
+</footer>
 
 </body>
 </html>
