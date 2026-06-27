@@ -78,7 +78,7 @@ Players explore a surreal digital circus filled with unstable characters, branch
 ## 🔗 Links
 
 - 🎮 Play Game: https://tadc-mind-games.com/
-- 🌐 Game Page: https://tadc-mind-games.com/
+- 🌐 Game Page: https://tadcmindgames.github.io/tadc-mind-games/
 
 ---
 
